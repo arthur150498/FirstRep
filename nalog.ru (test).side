@@ -1,0 +1,83 @@
+{
+  "id": "431b64ce-bc92-4f2d-bf3f-30a7ff1f32a8",
+  "version": "2.0",
+  "name": "tt",
+  "url": "https://www.nalog.ru",
+  "tests": [{
+    "id": "9376071c-1d73-4c21-a180-ec003de6f8f0",
+    "name": "gg",
+    "commands": [{
+      "id": "8a051843-7ba9-405f-b0cc-7bb3772c1cca",
+      "comment": "",
+      "command": "open",
+      "target": "/rn77/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bf6d560-ddfe-41c3-8783-e0d2fe6dbbee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2770a953-3ab1-4ae9-988b-b63d737a0f7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.questions__item:nth-child(2) .text-icon",
+      "targets": [
+        ["css=.questions__item:nth-child(2) .text-icon", "css:finder"],
+        ["xpath=//form[@id='MainForm']/div[3]/div/div[6]/div/div/ul/li[2]/a/span/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3052fa4c-9917-4067-b62a-e9be602c9353",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d82ea0d-6543-4d2b-9d38-2838d49e5127",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Физические лица",
+      "targets": [
+        ["linkText=Физические лица", "linkText"],
+        ["css=.breadcrumbs > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Физические лица')]", "xpath:link"],
+        ["xpath=//form[@id='MainForm']/div[3]/div/div[4]/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rn77/fl/')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Физические лица')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "534056ec-1500-46ee-890c-7a3b88eaec3f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Граждане платят налоги",
+      "targets": [
+        ["linkText=Граждане платят налоги", "linkText"],
+        ["css=.content_list li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Граждане платят налоги')]", "xpath:link"],
+        ["xpath=//div[@id='divSecondPageColumns']/div[2]/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#t2')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Граждане платят налоги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e91d941a-c21c-4bc0-8bfe-32d142296794",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9376071c-1d73-4c21-a180-ec003de6f8f0"]
+  }],
+  "urls": ["https://www.nalog.ru/"],
+  "plugins": []
+}
