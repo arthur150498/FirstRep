@@ -1,0 +1,114 @@
+{
+  "id": "3e87e5c9-8c11-47eb-8de0-3f8821294838",
+  "version": "2.0",
+  "name": "wiki test",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "a0e47b73-bfec-4201-b9ff-dbedd30af26c",
+    "name": "wiki test",
+    "commands": [{
+      "id": "d827b0c2-e7e1-48f1-aa01-45b471206f90",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f77ec750-4686-4ceb-aaef-c58efd5b7627",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "van gog"
+    }, {
+      "id": "07ecaa66-6303-42a7-a02a-a9e7d09613b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.suggestion-title",
+      "targets": [
+        ["css=.suggestion-title", "css:finder"],
+        ["xpath=//div[@id='typeahead-suggestions']/div/a/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Ван Гог (значения)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa3ae46a-8885-4b0d-b0b9-26c77af1a5bd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Ван Гог, Винсент",
+      "targets": [
+        ["linkText=Ван Гог, Винсент", "linkText"],
+        ["css=.mw-parser-output > ul:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ван Гог, Винсент')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/%D0%92%D0%B0%D0%BD_%D0%93%D0%BE%D0%B3,_%D0%92%D0%B8%D0%BD%D1%81%D0%B5%D0%BD%D1%82')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ван Гог, Винсент')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b8543a-1abe-4452-b152-ef2a615b1396",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Ван Гог, Винсент",
+      "targets": [
+        ["linkText=Ван Гог, Винсент", "linkText"],
+        ["css=.mw-parser-output > ul:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ван Гог, Винсент')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/%D0%92%D0%B0%D0%BD_%D0%93%D0%BE%D0%B3,_%D0%92%D0%B8%D0%BD%D1%81%D0%B5%D0%BD%D1%82')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ван Гог, Винсент')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a297ae53-4573-4606-bcbf-1e6e8a4d319a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ван Гог, Тео",
+      "targets": [
+        ["linkText=Ван Гог, Тео", "linkText"],
+        ["css=.mw-parser-output > ul:nth-child(3) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ван Гог, Тео')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/%D0%92%D0%B0%D0%BD_%D0%93%D0%BE%D0%B3,_%D0%A2%D0%B5%D0%BE_(%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B5%D1%86_%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8)')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ван Гог, Тео')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e61d547-ace6-484a-8597-9f07e141d63a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Вклад",
+      "targets": [
+        ["linkText=Вклад", "linkText"],
+        ["css=#pt-anoncontribs > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Вклад')]", "xpath:link"],
+        ["xpath=//li[@id='pt-anoncontribs']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вклад')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6977905b-ae31-45fe-97f9-45a8cf25150e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a0e47b73-bfec-4201-b9ff-dbedd30af26c"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}
